@@ -1,4 +1,4 @@
-<h1 >Hi 👋, I'm Manvendra Kumar Singh</h1>
+<h1 >Hi, I'm Manvendra Kumar Singh</h1>
 <h3 >I design, build, and deploy AI-powered applications, taking ideas from development to production.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=manvendra-github&label=Profile%20views&color=0e75b6&style=flat" alt="manvendra-github" /> </p>
