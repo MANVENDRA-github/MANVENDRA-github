@@ -1,5 +1,5 @@
 <!-- ====================== HEADER ====================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:7aa2f7,100:bb9af7&height=200&section=header&text=Manvendra%20Kumar%20Singh&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=I%20build%20production-grade%20AI%20agents%20%26%20LLM%20tooling&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:7aa2f7,100:bb9af7&height=200&section=header&text=Manvendra%20Kumar%20Singh&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=I%20build%20production-grade%20AI%20agents%20and%20LLM%20tooling&descAlignY=58&descSize=18" width="100%"/>
 
 <!-- ====================== STATUS BADGES ====================== -->
 <div align="center">
