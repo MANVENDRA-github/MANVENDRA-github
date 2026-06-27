@@ -1,0 +1,67 @@
+name: Cache README Assets
+
+# Snapshots rate-limit-prone / third-party widget SVGs into this repo's `assets`
+# branch on a schedule. The README then serves the LOCAL copies (GitHub's own
+# infrastructure) instead of the shared public instances, which insulates the
+# profile from rate limits and outages. If a refresh fetch fails or returns an
+# error card, the previous good copy is kept (last-good wins).
+#
+# To cache another widget later: add one `refresh "<name>" "<url>"` line below
+# and point the README <img> at
+# https://raw.githubusercontent.com/<owner>/<repo>/assets/<name>.svg
+
+on:
+  schedule:
+    - cron: "0 6 * * *"      # refresh once daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/cache-assets.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restore existing cached assets (keep last-good)
+        run: |
+          mkdir -p dist
+          if git clone --depth 1 --branch assets "https://github.com/${{ github.repository }}.git" existing 2>/dev/null; then
+            cp existing/*.svg dist/ 2>/dev/null || true
+            echo "Restored $(ls dist | wc -l) existing asset(s)."
+          else
+            echo "No assets branch yet — first run."
+          fi
+
+      - name: Refresh widget snapshots
+        run: |
+          refresh() {
+            name="$1"; url="$2"; ok=0
+            for attempt in 1 2 3; do
+              if curl -fsSL --max-time 60 -A "Mozilla/5.0" "$url" -o tmp.svg \
+                 && head -c 300 tmp.svg | grep -qi "<svg" \
+                 && ! grep -qiE 'rate limit|maximum retries|something went wrong|bad credentials|could not fetch' tmp.svg \
+                 && [ "$(wc -c < tmp.svg)" -gt 300 ]; then
+                mv tmp.svg "dist/$name.svg"; echo "OK   refreshed $name"; ok=1; break
+              fi
+              echo "...  retry $name ($attempt)"; sleep 5
+            done
+            [ "$ok" = "0" ] && echo "WARN keeping last-good for $name"
+            rm -f tmp.svg
+          }
+
+          # --- cached widgets (name | url) ---
+          refresh "stats"     "https://github-readme-stats.vercel.app/api?username=MANVENDRA-github&show_icons=true&include_all_commits=true&hide_border=true&rank_icon=github&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5"
+          refresh "top-langs" "https://github-readme-stats.vercel.app/api/top-langs/?username=MANVENDRA-github&layout=compact&langs_count=10&hide_border=true&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5"
+
+          echo "=== assets to publish ==="; ls -la dist
+
+      - name: Publish to assets branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: assets
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
