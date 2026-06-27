@@ -95,10 +95,10 @@ I'm a software engineer who is **all-in on AI and agentic systems**. I'm fascina
 <table>
 <tr>
 <td>
-<img src="https://github-readme-stats.vercel.app/api?username=MANVENDRA-github&show_icons=true&include_all_commits=true&hide_border=true&rank_icon=github&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" alt="GitHub stats" height="180"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/stats.svg" alt="GitHub stats" height="180"/>
 </td>
 <td>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MANVENDRA-github&layout=compact&langs_count=10&hide_border=true&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5" alt="Top languages" height="180"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/top-langs.svg" alt="Top languages" height="180"/>
 </td>
 </tr>
 </table>
