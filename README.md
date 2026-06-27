@@ -20,11 +20,14 @@
 <!-- ====================== ABOUT ME ====================== -->
 ## 👋 About Me
 
-- 🛡️ Currently building **[Sentinel](https://github.com/MANVENDRA-github/sentinel)** — a *verifying LLM gateway* (smart routing · semantic cache · inline output verification · OpenTelemetry + live dashboard). Shipped **v0.1.0**.
-- 🤖 I design **multi-agent systems & AI coding agents** — [sage-agent](https://github.com/MANVENDRA-github/sage-agent), [pandavas](https://github.com/MANVENDRA-github/pandavas), [forklift](https://github.com/MANVENDRA-github/forklift), [pitch-pilot](https://github.com/MANVENDRA-github/pitch-pilot).
-- 🌱 Going deep on **LangGraph, FastAPI, evals, and production AI infrastructure** (OpenTelemetry, Docker/K8s, Terraform).
-- 💬 Ask me about **AI agents, LLM tooling, full-stack (MERN / Next.js)**, or **DSA**.
-- ⚡ I write code with patience and the optimism of `git commit -m "final fix"`.
+I'm a software engineer who is **all-in on AI and agentic systems**. I'm fascinated by what large language models make possible, and I love turning that frontier into software that actually ships and holds up in the real world. The agentic edge is what excites me most: systems that can reason, plan, use tools, remember, and get better over time.
+
+- 🤖 **Agentic AI** — multi-agent orchestration, AI coding agents, tool-use, and memory, backed by evals that keep them honest.
+- 🧠 **LLMs, end-to-end** — retrieval, routing, caching, verification, and observability; coaxing reliability out of non-deterministic models.
+- 🏗️ **Production-first** — I take ideas from prototype to deployed, tested, observable systems, not just demos.
+- 🌱 **Always building & learning** — chasing new agent frameworks, model capabilities, and developer tooling.
+
+> 💬 Always happy to talk **AI agents, LLMs, and the future of how we build software**.
 
 <br/>
 
