@@ -41,7 +41,7 @@ jobs:
             name="$1"; url="$2"; ok=0
             for attempt in 1 2 3; do
               if curl -fsSL --max-time 60 -A "Mozilla/5.0" "$url" -o tmp.svg \
-                 && head -c 300 tmp.svg | grep -qi "<svg" \
+                 && grep -qi "<svg" tmp.svg \
                  && ! grep -qiE 'rate limit|maximum retries|something went wrong|bad credentials|could not fetch' tmp.svg \
                  && [ "$(wc -c < tmp.svg)" -gt 300 ]; then
                 mv tmp.svg "dist/$name.svg"; echo "OK   refreshed $name"; ok=1; break
@@ -55,6 +55,14 @@ jobs:
           # --- cached widgets (name | url) ---
           refresh "stats"     "https://github-readme-stats.vercel.app/api?username=MANVENDRA-github&show_icons=true&include_all_commits=true&hide_border=true&rank_icon=github&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5"
           refresh "top-langs" "https://github-readme-stats.vercel.app/api/top-langs/?username=MANVENDRA-github&layout=compact&langs_count=10&hide_border=true&theme=tokyonight&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5"
+          refresh "header"         "https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:7aa2f7,100:bb9af7&height=200&section=header&text=Manvendra%20Kumar%20Singh&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=I%20build%20production-grade%20AI%20agents%20and%20LLM%20tooling&descAlignY=58&descSize=18"
+          refresh "footer"         "https://capsule-render.vercel.app/api?type=waving&color=0:bb9af7,50:7aa2f7,100:1a1b27&height=120&section=footer"
+          refresh "typing"         "https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=620&height=45&lines=Building+production-grade+AI+agents;Designing+LLM+tooling+%26+gateways;Shipping+ideas+from+dev+to+prod;Patience+%2B+git+commit+-m+%22final+fix%22"
+          refresh "streak"         "https://streak-stats.demolab.com?user=MANVENDRA-github&theme=tokyonight&hide_border=true"
+          refresh "activity"       "https://github-readme-activity-graph.vercel.app/graph?username=MANVENDRA-github&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=c0caf5&line=7aa2f7&point=bb9af7&area=true&area_color=7aa2f7"
+          refresh "langs-repos"    "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MANVENDRA-github&theme=tokyonight"
+          refresh "langs-commits"  "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MANVENDRA-github&theme=tokyonight"
+          refresh "productive-time" "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MANVENDRA-github&theme=tokyonight&utcOffset=5.5"
 
           echo "=== assets to publish ==="; ls -la dist
 

@@ -1,5 +1,5 @@
 <!-- ====================== HEADER ====================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:7aa2f7,100:bb9af7&height=200&section=header&text=Manvendra%20Kumar%20Singh&fontSize=42&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=I%20build%20production-grade%20AI%20agents%20and%20LLM%20tooling&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/header.svg" width="100%"/>
 
 <!-- ====================== STATUS BADGES ====================== -->
 <div align="center">
@@ -11,7 +11,7 @@
 <!-- ====================== TYPING INTRO ====================== -->
 <div align="center">
   <a href="https://github.com/MANVENDRA-github">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=620&height=45&lines=Building+production-grade+AI+agents;Designing+LLM+tooling+%26+gateways;Shipping+ideas+from+dev+to+prod;Patience+%2B+git+commit+-m+%22final+fix%22" alt="Typing SVG"/>
+    <img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/typing.svg" alt="Typing SVG"/>
   </a>
 </div>
 
@@ -106,12 +106,12 @@ I'm a software engineer who is **all-in on AI and agentic systems**. I'm fascina
 
 <!-- ====================== STREAK ====================== -->
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=MANVENDRA-github&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/streak.svg" alt="GitHub streak"/>
 </div>
 
 <!-- ====================== ACTIVITY GRAPH ====================== -->
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MANVENDRA-github&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=c0caf5&line=7aa2f7&point=bb9af7&area=true&area_color=7aa2f7" alt="Contribution activity graph" width="95%"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/activity.svg" alt="Contribution activity graph" width="95%"/>
 </div>
 
 <br/>
@@ -199,12 +199,12 @@ An **intent-based shell-command reference** — describe what you want to do, ge
 ## 📈 Profile Summary
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MANVENDRA-github&theme=tokyonight" alt="Repos per language" height="200"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MANVENDRA-github&theme=tokyonight" alt="Most-committed language" height="200"/>
+  <img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/langs-repos.svg" alt="Repos per language" height="200"/>
+  <img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/langs-commits.svg" alt="Most-committed language" height="200"/>
 </div>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MANVENDRA-github&theme=tokyonight&utcOffset=5.5" alt="Productive time (IST)" width="72%"/>
+  <img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/productive-time.svg" alt="Productive time (IST)" width="72%"/>
 </div>
 
 <br/>
@@ -234,4 +234,4 @@ An **intent-based shell-command reference** — describe what you want to do, ge
 </div>
 
 <!-- ====================== FOOTER ====================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:bb9af7,50:7aa2f7,100:1a1b27&height=120&section=footer" width="100%"/>
+<img src="https://raw.githubusercontent.com/MANVENDRA-github/MANVENDRA-github/assets/footer.svg" width="100%"/>
